@@ -15,6 +15,10 @@ Install the requirements.txt and hit run all on the mancala machine notebook to 
 
 ## Video Links
 
+Project overview: https://duke.box.com/s/htp30t8i0snn3mex3tjj33ra1zkiktvs
+
+Technical overview: https://duke.box.com/s/t7zpew73awghdkgm9hsr4ckuf6qzdz0d
+
 ## Evaluation and Design Choices:
 
 ![Confusion matrix of the performance of different models](/images/comparison.png "Competitive analysis of models")
