@@ -35,17 +35,17 @@ For training, increasing the number of episodes made a performance difference, w
 
 From notebooks/evaluation.ipynb: 
 
-*Agent deepq_agent_short had a winrate against a random agent of 0.614
+* Agent deepq_agent_short had a winrate against a random agent of 0.614
 
-*Agent reinforce_agent_short had a winrate against a random agent of 0.553
+* Agent reinforce_agent_short had a winrate against a random agent of 0.553
 
-*Agent deepq_agent_medium had a winrate against a random agent of 0.692
+* Agent deepq_agent_medium had a winrate against a random agent of 0.692
 
-*Agent reinforce_agent_medium had a winrate against a random agent of 0.528
+* Agent reinforce_agent_medium had a winrate against a random agent of 0.528
 
-*Agent deepq_agent_long had a winrate against a random agent of 0.741
+* Agent deepq_agent_long had a winrate against a random agent of 0.741
 
-*Agent reinforce_agent_long had a winrate against a random agent of 0.776
+* Agent reinforce_agent_long had a winrate against a random agent of 0.776
 
 In addition to evaluating metrics here, I also wanted to include a written explaination of some of the design choices that were made in case it was missed in the video. 
 
