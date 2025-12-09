@@ -5,6 +5,8 @@ This project is a notebook containing a Gymnasium environment, as well as multip
 ### Note for grader:
 I already covered this in the video, but in the course of doing some experimentation, I accidentally overwrote the models used for evaluation here. I'm retraining new versions as this is submitted and they should be added to the repo by the night of 12/10, but their performance will likely not match what I originally did the analysis on. 
 
+Also, do note that the mancala game used in the project overview video was not my own, but someone else's website. The website is cited in the attribution file. 
+
 ## What it does
 
 There is a custom Gymnasium environment to play the game Mancala. The reason that I needed to make a custom enviornment was because I couldn't find one already existing online somewhere. There are two major agent types: a policy agent using the REINFORCE algorithm and a Deep-Q agent, both of which use a self-play architecture to learn how to play the game Mancala. Their performance is benchmarked both against a agent moving randomly, as well as against each other. 
