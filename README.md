@@ -22,6 +22,7 @@ Technical overview: https://duke.box.com/s/t7zpew73awghdkgm9hsr4ckuf6qzdz0d
 ## Evaluation and Design Choices:
 
 ![Confusion matrix of the performance of different models](/images/comparison.png "Competitive analysis of models")
+
 (Sorry the bottom is messed up, the way to read the graph is that the squares are the winrate of the agent on the y-axis against the agent on the x-axis, and the agents on the x-axis are in the same order as the y-axis)
 
 After training, I had the different models play each other 1000 times each in order to gauge their performance. There are a few key takeaways from this evaluation. Firstly, the DeepQ agent that was trained for a long amount of time actually doesn't show that much of a boost in performance over those trained for a short amount of time when they play against each other, and is similarly effective to DeepQ agent medium in performance against the policy agents. Speaking of the policy agents, it seems that the long training period causes reinforce_agent long to be more effective against a wide variety of agents, only consistently losing to the DeepQ medium agent. 
