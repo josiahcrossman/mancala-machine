@@ -5,6 +5,8 @@ This project is a notebook containing a Gymnasium environment, as well as multip
 ### Note for grader:
 I already covered this in the video, but in the course of doing some experimentation, I accidentally overwrote the models used for evaluation here. I'm retraining new versions as this is submitted and they should be added to the repo by the night of 12/10, but their performance will likely not match what I originally did the analysis on. 
 
+UPDATE 12/9/25 4:18pm  -- added all but DeepQ long model
+
 Also, do note that the mancala game used in the project overview video was not my own, but someone else's website. The website is cited in the attribution file. 
 
 ## What it does
@@ -17,9 +19,14 @@ Install the requirements.txt and hit run all on the mancala machine notebook to 
 
 ## Video Links
 
+Project overview: https://duke.box.com/s/htp30t8i0snn3mex3tjj33ra1zkiktvs
+
+Technical overview: https://duke.box.com/s/t7zpew73awghdkgm9hsr4ckuf6qzdz0d
+
 ## Evaluation and Design Choices:
 
 ![Confusion matrix of the performance of different models](/images/comparison.png "Competitive analysis of models")
+
 (Sorry the bottom is messed up, the way to read the graph is that the squares are the winrate of the agent on the y-axis against the agent on the x-axis, and the agents on the x-axis are in the same order as the y-axis)
 
 After training, I had the different models play each other 1000 times each in order to gauge their performance. There are a few key takeaways from this evaluation. Firstly, the DeepQ agent that was trained for a long amount of time actually doesn't show that much of a boost in performance over those trained for a short amount of time when they play against each other, and is similarly effective to DeepQ agent medium in performance against the policy agents. Speaking of the policy agents, it seems that the long training period causes reinforce_agent long to be more effective against a wide variety of agents, only consistently losing to the DeepQ medium agent. 
@@ -31,12 +38,18 @@ When the agents play each other, they both attempt this strategy, and in the eps
 For training, increasing the number of episodes made a performance difference, with both the Deep-Q and REINFORCE agent showing a performance increase with an increased number of episodes
 
 From notebooks/evaluation.ipynb: 
-Agent deepq_agent_short had a winrate against a random agent of 0.614
-Agent reinforce_agent_short had a winrate against a random agent of 0.553
-Agent deepq_agent_medium had a winrate against a random agent of 0.692
-Agent reinforce_agent_medium had a winrate against a random agent of 0.528
-Agent deepq_agent_long had a winrate against a random agent of 0.741
-Agent reinforce_agent_long had a winrate against a random agent of 0.776
+
+* Agent deepq_agent_short had a winrate against a random agent of 0.614
+
+* Agent reinforce_agent_short had a winrate against a random agent of 0.553
+
+* Agent deepq_agent_medium had a winrate against a random agent of 0.692
+
+* Agent reinforce_agent_medium had a winrate against a random agent of 0.528
+
+* Agent deepq_agent_long had a winrate against a random agent of 0.741
+
+* Agent reinforce_agent_long had a winrate against a random agent of 0.776
 
 In addition to evaluating metrics here, I also wanted to include a written explaination of some of the design choices that were made in case it was missed in the video. 
 
