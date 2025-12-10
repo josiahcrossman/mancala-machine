@@ -6,6 +6,7 @@ This project is a notebook containing a Gymnasium environment, as well as multip
 I already covered this in the video, but in the course of doing some experimentation, I accidentally overwrote the models used for evaluation here. I'm retraining new versions as this is submitted and they should be added to the repo by the night of 12/10, but their performance will likely not match what I originally did the analysis on. 
 
 UPDATE 12/9/25 4:18pm  -- added all but DeepQ long model
+UPDATE 12/10/25 3:44pm  -- added DeepQ long model, all models uploaded
 
 Also, do note that the mancala game used in the project overview video was not my own, but someone else's website. The website is cited in the attribution file. 
 
